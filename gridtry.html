@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gridtry.css">
+</head>
+<body>
+  <div id="product-grid"></div>
+
+
+<script>
+  
+  fetch('products.json')  
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`Network response was not ok: ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then(products => {    
+  const grid = document.getElementById('product-grid');
+
+  products.forEach((product, index) => {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+      if ((index + 1) % 7 === 0 || (index + 1) % 7 === 1 && index !== 0) {
+      card.classList.add('large');
+    }
+    card.innerHTML = `
+      <img class="product-image" src="${product.img}" data-hover="${product.hoverImg}" alt="${product.title}">
+      <div class="product-info">
+        <div class="product-new">${product.tag}</div>
+      <div class="product-flex">
+        <div class="product-title">${product.title}</div>
+        <div class="product-price">${product.price}</div> </div>
+      </div>
+    `;
+
+    grid.appendChild(card);
+  });
+ const images = document.querySelectorAll('.product-image');
+
+    images.forEach(img => {
+      const originalSrc = img.src;
+      const hoverSrc = img.dataset.hover;
+    
+
+      img.addEventListener('mouseenter', () => {
+        if (hoverSrc) img.src = hoverSrc;
+      });
+
+      img.addEventListener('mouseleave', () => {
+        img.src = originalSrc;
+      });
+    });
+  
+   
+
+    console.log(products);
+  })
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+  });
+  
+
+</script>
+
+
+</body>
+</html>
