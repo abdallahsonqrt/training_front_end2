@@ -517,6 +517,7 @@
   .rotating-linke {
     bottom: -70px;
     right: 1vw;
+    left: auto;
   }
 
 }
