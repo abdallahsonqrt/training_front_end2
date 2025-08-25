@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OH.STODIO</title>
+    <link rel="stylesheet" href="tarain2.css">
+</head>
+<body>
+
+    <section>
+    <header>
+        <div class="navlistcon" id="myDIV">
+            <a href="file:///C:/Users/knigh/Documents/html-trainig/train2.html#" class="navlistitm active">man</a>
+            <a href="#" class="navlistitm">mem</a>
+            <a href="#" class="navlistitm">nem</a>
+        </div>
+    </header>
+    <div class="headcon">
+        <h1 class="headitm1">A brand and product designer working with clients globally </h1> 
+        <div id="myDIV1">
+            <a href="#" class="navsec active1">Expertise</a>
+            <a href="#"class="navsec">branding</a>
+            <a href="#"class="navsec">product</a>
+            <a href="#"class="navsec">design system</a> 
+        </div>
+    </div>
+    <section>
+        <div class="photogrid">
+            <img src="imge/black-fabric-texture-background-vector.jpg" class="photogriditm" alt=""><img src="imge/black-fabric-texture-background-vector.jpg" class="photogriditm" alt="">
+            <img src="imge/black-fabric-texture-background-vector.jpg" class="photogriditm" alt=""><img src="imge/black-fabric-texture-background-vector.jpg" class="photogriditm" alt="">
+            <img src="imge/black-fabric-texture-background-vector.jpg" class="photogriditm" alt=""><img src="imge/black-fabric-texture-background-vector.jpg" class="photogriditm" alt="">
+            </div>
+    </section>
+    <section>
+        <div class="foooooter">
+            <p>Let's work together</p>
+            <a href="mailto:someone@example.com" style="color: #7f7f7f;">Get in touch.</a>
+        </div>
+
+        <div class="trwesa">
+            <div>© Oli Harris 2023</div>
+            <div><a href="">Twiter</a> <a href="">Linkedin</a> <a href="">Mail</a></div>
+        </div>
+    </section>
+    <script>
+let header = document.getElementById("myDIV");
+let btns = header.getElementsByClassName("navlistitm");
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  let current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}   
+let headr = document.getElementById("myDIV1");
+let bts = headr.getElementsByClassName("navsec");
+for (let i = 0; i < bts.length; i++) {
+  bts[i].addEventListener("click", function() {
+  let currnt = document.getElementsByClassName("active1");
+  currnt[0].className = currnt[0].className.replace(" active1", "");
+  this.className += " active1";
+  });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,571 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Proximanova opt', sans-serif;
+    color: #4c4d5f;
+    font-size: 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+hr{
+
+    border-color: #01b289;
+}
+body{
+    background-color: white;
+}
+.center{
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    margin: auto;
+}
+.drobDowenArrow{
+    background-image: url(imge/59f05f389cd27200014f061e_icon-expand.png) ;
+    
+    background-position: 100% 50%;
+    background-size: auto 20px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.drobDowenArrowSmall{
+    background-image: url(imge/5e5fd7c602ca7caeb4feb68a_Path.svg) ;
+    background-position: 100% 50%;
+    background-size: auto 5px;
+    background-repeat: no-repeat;
+}
+.drobDowenArrowSmallRotat:hover{
+    background-image: url(imge/next\ \(1\).png) ;
+    background-position: 100% 50%;
+    background-size: auto 30px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.drobDowenArrowSmallRotat1:hover{
+    background-image: url(imge/next\ \(1\).png) ;
+    background-position: 120% 50%;
+    background-size: auto 30px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.headLineType1{
+font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+    font-size: 130% !important;
+    line-height: 200%;
+    font-weight: 400;
+}
+.pargrafType1{
+    border-bottom: 1px solid #ddd;
+    padding: 22px ;
+    font-size: 16px;
+    margin: 0 12px ;
+    padding-bottom: 40px;
+}
+.pargrafType1:hover{
+    border: none;
+}
+.headLineType2{
+    font-size: 1.375rem;
+    line-height: 1.4;
+    font-weight: 200;
+}
+.leadlinetype1{
+    font-size: 130%;
+    font-weight: bold;
+    line-height: 2.4;
+    margin: 10px 0px;
+    text-align: left;
+}
+.pargrafType2{
+     font-size: 16px;
+    font-weight: x-small;
+}
+.pargrafType3{
+    padding: 15px 10px;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0 3px;
+}
+.bricegragh{
+    font-size: 32px;
+    font-weight: 1000;
+    text-align: right;
+}
+.active{
+    display: block;
+}
+.navegationBarMainCon{
+    position: fixed;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    z-index: 100;
+}
+.navegationBarMainCon *{
+    font-size: 15px;
+}
+#logo{
+    margin: 0 10px;
+    width: 150px;
+    cursor: pointer;
+}
+#navegationBarSeconedCon{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    justify-content: flex-end;
+}
+.navegationBarItemCon{
+    display: flex;
+     width: auto;
+}
+.navegationBarItem{
+    display: flex;
+    position: relative;
+    width: 6vw;
+}
+.navegationBarTogelDD{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 16px 10px 0 ;
+    margin-right: 40px;
+    
+}
+.dropdownCont {
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 100%;
+    min-width: 352px;
+    box-shadow: 0 0 68px 0 rgba(2, 4, 69, .08);
+    z-index: 1;
+}
+.dropdownCont2{
+    display: flex;
+    flex-direction: column;
+     min-width: 352px;
+}
+.men {
+    float: none;
+    font-size: large;
+    text-decoration: none;
+    display: flex;
+    text-align: left;
+    padding: 3px;
+
+}
+.men:hover{
+    background-color: #fcfcfc;
+}
+.men:hover::after{
+    background-color: white;
+}
+.navegationBarTogelDD:hover .dropdownCont {
+    display: flex;
+}
+
+.dropDwenTogelDD{
+    position: relative;
+    padding: 10px 16px 10px 0 ;
+}
+.inerdropdownCont {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 100%;
+    top: 0;
+    background-color: white;
+}
+.dropdownCont-product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: transparent;
+    padding: 10px;
+    width: 100%;
+}
+.dropdownCont-product *{
+    padding: 5px;
+    width: 300px;
+    margin: 4px;
+}
+.dropdownCont-templets{
+    display: flex;
+  
+    width: 100%;
+}
+.templets{
+    display: flex;
+    width: 100%;
+    margin: 0 12px;   
+}
+.DdRList{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    align-items: center;
+    width: 400px;
+    padding: 30px;
+}
+.DdRList:hover{
+    display: flex;
+}
+.DdrTemplest{
+    border: 1px solid #ccc; border-radius: 6px;
+    background-image: url(imge/61937382e5d4af7188bd59be_Templates\ Menu\ BG\ 1.svg);
+    width: 390px;
+    padding: 7% ;
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+.DdrTemplest:hover{
+    border: 1px solid #ccc; border-radius: 6px;
+    background-image: url(imge/61937382e5d4af7188bd59be_Templates\ Menu\ BG\ 1.svg);
+    width: 400px;
+    padding: 7% ;
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+.inerdropdownCont *{
+    float: none;
+    text-decoration: none;
+    text-align: left;
+    padding: 3px;
+}
+.dropDwenTogelDD:hover .inerdropdownCont {
+    display: flex;
+}
+#login{
+    border-radius: 4px;
+    border: 1px solid#00b289;
+    color: #00b289;
+    padding:  10px;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 7vw;
+    text-align: center;  
+}
+#login:hover{
+    background-color: #00b289;
+    color: #fff;
+}
+.trail{
+    border-radius: 4px;
+    background-color: #00b289;
+    border: 1px solid #00b289;
+    color: white;
+    width: 170px;
+    text-align: center;
+    padding: 10px 30px;
+    text-align: center;
+}
+.trail:hover{
+    background-color: #06a17d;
+}
+.blue-shape._12 {
+    top: -95%;
+    right: -23%;
+    width: 130%;
+    height: 115%;
+}
+.blue-shape {
+    position: absolute;
+    left: -420px;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    z-index: -1;
+    display: block;
+    width: 56vw;
+    height: 56vw;
+    border-radius: 6.6vw;
+    background-color: #f2faff;
+    transform: rotate(-23deg);
+}
+#mainboty{
+    
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 130px;
+    padding-top: 110px;
+    padding-bottom: 45px;
+    width: 1400px;
+}
+#mainbotyheader{
+    display: flex;
+    align-self:center;
+    justify-self: center;
+    width: 580px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.toogelSwetch{
+-webkit-appearance: none;
+position: relative;
+width: 50px;
+height: 30px;
+border-radius: 25px;
+background-color: #00b289;
+outline: none;
+cursor: pointer;
+margin: 10PX 30PX;
+}
+.toogelSwetch::after{
+content: '';
+position: absolute;
+top: 50%;
+left: 30%;
+transform: translate(-50%,-50%);
+border-radius: 100px;
+height: 1.25rem;
+width:  1.25rem;
+background-color: white;
+transition: left .3s;
+}
+.toogelSwetch:checked::after{
+    left: 70%;
+}
+.selectedplane{
+    color: #000;
+}
+.nonselectedplane{
+}
+#blanselector{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blanscont{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.blansbaners{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    padding: 6% 4%;
+    width: 32%;
+    flex-direction: column;
+    border: .3px solid rgba(2, 4, 69, .15);
+    box-shadow: 0 0 68px 0 rgba(2, 4, 69, .08);
+    border-radius: 4px;
+    background-color: #fff;
+}
+.blansbaners p{
+    font-size: 15px;
+    font-weight: lighter;
+
+} 
+.yearlypayment{
+    display: none;
+}
+.monthlypayment{
+    display: block;
+}
+.popularTag {
+    position: absolute;
+    left: auto;
+    top: 50px;
+    right: -109px;
+    bottom: auto;
+    width: 360px;
+    padding: 11px 100px;
+    background-color: #01b289;
+    transform: rotate(45deg);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.price{
+    display: flex;
+    align-items: flex-end;
+    font-size: 62px;
+    line-height: 72px;
+    font-weight: 600;
+}
+.currencySymbol {
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.note{
+    text-align: right;
+     font-size: 15px;
+     margin-right: 7px;
+}
+.tickCont {
+    display: flex;
+    padding-bottom: 18px;
+    align-items: center;
+    color: #4c4d5f;
+    font-size: 16px;
+    line-height: 23px;
+}
+.blansaddonscont{
+     position: relative;
+     margin-top: 80px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+   
+}
+.addonsbaners{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 0 0 68px 0 rgba(2, 4, 69, .08);
+    border-radius: 8px;
+    padding: 10px 40px 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.addonsbaners1{
+    position: relative;
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 0 0 68px 0 rgba(2, 4, 69, .08);
+    border-radius: 8px;
+    padding: 10px 40px 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.addonsbanersCons{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 0 0 68px 0 rgba(2, 4, 69, .08);
+    border-radius: 8px;
+    padding: 10px 40px 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.addoncontent{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+    width: 100%;
+    align-items: center;
+}
+.BlanType{
+    font-size: 14px;
+    text-align: right;
+    padding: 10px;
+}
+
+.adesrev{
+    display: flex;
+    background-color: #f2faff;
+    padding: 64px 48px;
+    justify-content: space-between;
+    width: 920px;
+    font-size: 25PX;
+    margin-top: 120px; 
+}
+
+#adss{
+    border-radius: 4px;
+    background-color: #00b289;
+    border: 1px solid #00b289;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+}
+.FrequentQnA{
+     margin-top: 80px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 170px;
+    padding-right: 170px;
+}
+#qnaheader{
+    font-size: 150%;
+    color: #00b289;
+    line-height: 4.5;
+    margin: 0 auto;
+    align-self: center;
+}
+.TogelDropDowenBlock
+{
+    display: none;
+}
+
+.foteraw{
+
+    width: 70%;
+    max-width: 1900px;
+    position: relative;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    display: flex;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items:  flex-start;
+    }
+.fotercolm{
+    position: relative;
+    margin-top: 50px;
+    font-size: medium;
+    margin-left: 1%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: column;
+    line-height: 120%;
+}
+.fotercolm a{
+    display: block;
+    line-height: 120%;
+    text-decoration: none;
+    line-height: 170%;
+    font-size: 14px;
+    width: 250px;
+}
+
+.fotercolm a:hover{
+  color: #4c4d5a;
+}
+.hoverall
+.hover-me
+.show-me
+.hover-me1
+.show-me1
+.hover-me2
+.show-me2
+.hover-me3
+.show-me3
+.hover-me4
+.show-me4
+.hover-me5
+.show-me5
+.hover-me6
+.show-me6
+{float: none;}

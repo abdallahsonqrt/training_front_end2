@@ -1,0 +1,209 @@
+*{
+  font-family:  'GT America Standard', sans-serif;
+  font-weight: 400;
+   margin: 0;
+  padding: 0;
+}
+ul.navelist {
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #111111;
+  padding-top:7px;
+  justify-content: space-between;
+
+  width: 100%;
+}
+li.navelist {
+ 
+  color: white;
+  text-align: center;
+  font-size: large;
+  text-decoration: none;
+  margin: 5px;
+  
+}
+li.navelist > * {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+
+  
+}
+.ronded > * {
+    border-radius:  8px;
+
+}
+#logo:hover{
+  text-decoration: none;
+  color: #cabebe8c;
+}
+#navlistsrh
+{ 
+ border: 1px solid #111111;
+  width: 250px;
+  padding-left: 10px;
+  height: 55px;
+  font-size: large;
+}
+#navlistsrh:focus
+{ 
+ border: 1px solid #111111;
+ outline: none;
+}
+#signin{
+  margin-right: 100px;
+  font-size: 25px;
+  background-color: #4C5FD5;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+#signin:hover{
+   background-color: #ffffff;
+  color: rgb(0, 0, 0);
+
+}
+#supmet{
+margin: 10px;
+  font-size: 25px;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+.headcon{
+  background-color: #dadbf1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80PX 30px 130px;
+}
+.headitm{
+font-size: 82px;
+letter-spacing: -4PX;
+margin-bottom: 25px;
+}
+#headsrh{
+  border: 1px solid #111111;
+  border-radius: 4px;
+  width: 40vw;
+  padding: 0 20PX;
+  height: 75px;
+  font-size: large;
+  box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.1);
+}
+#headsrh:hover{
+  border-color: #4C5FD5;
+  outline: none;
+}
+#headsrh:focus{
+  border-color: #4C5FD5;
+  outline: none;
+}
+#arrowonserch{
+position: relative;
+right: -230px;
+bottom: 50px;
+z-index: 100;
+}
+.pcon{
+  max-width: 30vw;
+  min-width: 30vw;
+  margin-bottom: 100px;
+}
+.pcon a{
+color: #4C5FD5;
+text-decoration: none;
+}
+.imeg{
+  padding-top: 50px;
+  padding-right: 20px;
+  width: 100px;
+  height: 100px;
+}
+.pcon h4 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.grid-can {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: auto auto ;
+  font-size:  larger;
+  gap: 10px;
+  background-color: transparent;
+  justify-self: center;
+  text-wrap: warp;
+
+}
+.fotercon{
+background-color: black;
+padding-bottom: 60px ;
+  flex-wrap: wrap;
+
+}
+.dropdown-arrow {
+    margin-right: 6px;
+    background-image: url(http://web.archive.org/web/20221117021711im_/https://assets-global.website-files.com/58868bc…/5e5fd7c…_Path.svg);
+    background-position: 50% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+.foteraw{
+
+  width: 90%;
+  max-width: 1900px;
+  position: relative;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  background-color: black;
+  display: block;
+  color: #ffffff;
+
+}
+#copyrghit{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 130% ;
+}
+
+.fotercolm{
+  vertical-align: top;
+  position: relative;
+  width: 15%;
+  margin-top: 50px;
+  color: #fff;
+  font-size: medium;
+  display: inline-block;
+  flex-direction: column;
+  line-height: 120%;
+  font-size: 16px;
+  margin-left: 4%;
+
+}
+.fotercolm a{
+  display: block;
+color: #fff;
+line-height: 120%;
+font-size: 16px;  
+text-decoration: none;
+}
+* a:hover{
+ 
+text-decoration-line: underline;
+}
+h3{
+  font-size: 170%;
+  font-weight: bolder;
+}
